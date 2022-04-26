@@ -1,21 +1,21 @@
-var myNinjaApp = angular.module('myNinjaApp', ['ngRoute'])
+var myNinjaApp = angular.module('myNinjaApp');
 
-myNinjaApp.config([
-  '$routeProvider',
-  function ($routeProvider) {
-    $routeProvider
-      .when('/home', {
-        templateUrl: 'views/home.html',
-      })
-      .when('/directory', {
-        templateUrl: 'views/directory.html',
-        controller: 'NinjaController',
-      })
-      .otherwise({
-        redirectTo: '/home',
-      })
-  },
-])
+// myNinjaApp.config([
+//   '$routeProvider',
+//   function ($routeProvider) {
+//     $routeProvider
+//       .when('/home', {
+//         templateUrl: 'views/home.html',
+//       })
+//       .when('/directory', {
+//         templateUrl: 'views/directory.html',
+//         controller: 'NinjaController',
+//       })
+//       .otherwise({
+//         redirectTo: '/home',
+//       })
+//   },
+// ])
 
 myNinjaApp.controller('NinjaController', [
   '$scope',
